@@ -41,7 +41,10 @@ Ejecuta el siguiente comando para generar el lexer y el parser en Python:
 
 2. **Ejecutar el programa**
    ```bash
-   python3 main.py input.txt
+   python3 main.py map.txt
+   ```
+   ```bash
+   python3 main.py filter.txt
    ```
 
 3. **Salida esperada**:
@@ -57,4 +60,19 @@ Ejecuta el siguiente comando para generar el lexer y el parser en Python:
 - `doble`: Multiplica cada elemento por 2.
 - `par`: Filtra los múltiplos de 2.
 
+### Uso del PUNTO 3
+Ejecuta el siguiente comando para generar el lexer y el parser en Python:
+   ```bash
+   antlr4 -Dlanguage=Python3 -visitor g.g4
+   ```
+1. **Crear un archivo de entrada (`input.txt`)**. Ejemplo:
+   ```txt
+   MAP(doble, [1, 2, 3, 4])
+   ```
+2. **Ejecutar el programa**
+   ```bash
+   python3 main.py input.txt
+   ```
+3. **Salida esperada**:
+   El programa procesará las instrucciones y mostrará la grafica de la transformada.
 
