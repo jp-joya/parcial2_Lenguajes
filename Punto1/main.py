@@ -4,7 +4,7 @@ from gLexer import gLexer
 from gParser import gParser
 from gVisitor import gVisitor
 
-class EvaluadorComplejo(Visitor):
+class EvaluadorComplejo(gVisitor):
     def visitOperacionBinaria(self, ctx):
         izquierda = self.visit(ctx.expr(0))
         derecha = self.visit(ctx.expr(1))
