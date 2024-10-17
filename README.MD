@@ -41,7 +41,10 @@ Ejecuta el siguiente comando para generar el lexer y el parser en Python:
 
 2. **Ejecutar el programa**
    ```bash
-   python3 main.py input.txt
+   python3 main.py map.txt
+   ```
+   ```bash
+   python3 main.py filter.txt
    ```
 
 3. **Salida esperada**:
