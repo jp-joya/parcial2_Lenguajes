@@ -60,7 +60,7 @@ Ejecuta el siguiente comando para generar el lexer y el parser en Python:
 ### Uso del PUNTO 3
 Ejecuta el siguiente comando para generar el lexer y el parser en Python:
    ```bash
-   antlr4 -Dlanguage=Python3 g.g4
+   antlr4 -Dlanguage=Python3 -visitor g.g4
    ```
 1. **Crear un archivo de entrada (`input.txt`)**. Ejemplo:
    ```txt
