@@ -65,13 +65,21 @@ Ejecuta el siguiente comando para generar el lexer y el parser en Python:
    ```bash
    antlr4 -Dlanguage=Python3 -visitor g.g4
    ```
-1. **Crear un archivo de entrada (`input.txt`)**. Ejemplo:
+1. **Crear un archivo de entrada (`rectangular.txt` o `triangular.txt`)**. Ejemplo:
    ```txt
-   MAP(doble, [1, 2, 3, 4])
+   x = Π(t / 2);
+   fft(x);
+   ```
+   ```txt
+   x = Λ(t / 3);
+   fft(x);
    ```
 2. **Ejecutar el programa**
    ```bash
-   python3 main.py input.txt
+   python3 main.py rectangular.txt
+   ```
+   ```bash
+   python3 main.py triangular.txt
    ```
 3. **Salida esperada**:
    El programa procesará las instrucciones y mostrará la grafica de la transformada.
